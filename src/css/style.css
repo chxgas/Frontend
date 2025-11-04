@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park&display=swap');
+:root{
+    --primaryColor: #E4E4EE;
+    --secondaryColor: #B2B3B5;
+}
+
+body{
+    margin: 0;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 62.5%;
+}
+
+.header-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.1em;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 7.8em;
+}
+
+.header-sup {
+    background-color: var(--primaryColor);
+    display: inline-block;
+    min-height: 1px;
+    height: 3.3em;
+    width: 100%;
+}
+
+.header-sub {
+    background-color: var(--secondaryColor);
+    display: inline-block;
+    min-height: 1px;
+    height: 4.5em;
+    width: 100%;
+}
+
+nav {
+    background-color: var(--primaryColor);
+}
+
+.lista-nav {
+    background-color: bisque;
+    list-style: none;
+    display: flex;
+    height: 15em;
+}
+
+.lista-nav li{
+    background-color: greenyellow;
+    flex: 1 0 0;
+}
+
+.lista-nav li:first-child{
+    background-color: red;
+}
+
+.lista-nav li:nth-child(2) {
+    background-color: blue;
+}
+
+.lista-nav  li:last-child {
+    background-color: magenta;
+}
+
+.nav-title {
+    width: 10em;
+    font-size: 3.6em;
+    text-align: center;
+    font-weight: 600;
+}

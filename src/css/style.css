@@ -50,15 +50,18 @@ nav {
     list-style: none;
     display: flex;
     height: 15em;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .lista-nav li{
     background-color: greenyellow;
-    flex: 1 0 0;
+    margin: 0 1em;
 }
 
 .lista-nav li:first-child{
     background-color: red;
+   
 }
 
 .lista-nav li:nth-child(2) {

@@ -5,9 +5,10 @@
 }
 
 body{
-    margin: 0;
+    margin: 0    
     font-family: "Kulim Park", sans-serif;
     font-size: 62.5%;
+    min-heigth: 100vh;
 }
 
 .header-container {
@@ -29,7 +30,7 @@ header {
     background-color: var(--primaryColor);
     display: inline-block;
     min-height: 1px;
-    height: 3.3em;
+    height: 2.3em;
     width: 100%;
 }
 
@@ -37,7 +38,7 @@ header {
     background-color: var(--secondaryColor);
     display: inline-block;
     min-height: 1px;
-    height: 4.5em;
+    height: 3.5em;
     width: 100%;
 }
 
@@ -46,30 +47,38 @@ nav {
 }
 
 .lista-nav {
-    background-color: bisque;
     list-style: none;
     display: flex;
     height: 15em;
     align-items: center;
     justify-content: space-between;
-}
-
-.lista-nav li{
-    background-color: greenyellow;
-    margin: 0 1em;
+    padding: 0;
 }
 
 .lista-nav li:first-child{
-    background-color: red;
-   
+    margin-left: 4em;
 }
 
-.lista-nav li:nth-child(2) {
-    background-color: blue;
+.button-back{
+    width: 6em;
+    height: 6em;
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(56%) sepia(9%) saturate(93%) hue-rotate(210deg) brightness(100%) contrast(90%);
+    transition: filter 0.25s ease 0s;
 }
+
+.button-back:hover{
+    filter: brightness(0) saturate(100%) invert(4%) sepia(0%) saturate(2851%) hue-rotate(228deg) brightness(100%) contrast(96%);
+    transition: filter 0.25s ease 0s;
+}
+
 
 .lista-nav  li:last-child {
-    background-color: magenta;
+    background-color: #0D0E0E;
+    width: 10.5em;
+    height: 10.5em;
+    border-radius: 100%;
+    margin-right: 4em;
 }
 
 .nav-title {
@@ -77,4 +86,31 @@ nav {
     font-size: 3.6em;
     text-align: center;
     font-weight: 600;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.container-title{
+    height: auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 6.4em;
+}
+
+.psup, .psub, .listapsup, .listapsub{
+    font-size: 1.4em;
+    width: 127.1em;
+}
+
+.container-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

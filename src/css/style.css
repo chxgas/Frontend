@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park&display=swap');
+
+.header-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.1em;
+}
+
+nav {
+    background-color: var(--primaryColor);
+    height: 15em;
+}
+
+.lista-nav {
+    list-style: none;
+    display: flex;
+    height: 15em;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.lista-nav li:first-child{
+    margin-left: 4em;
+}
+
+.button-back{
+    width: 6em;
+    height: 6em;
+    transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(56%) sepia(9%) saturate(93%) hue-rotate(210deg) brightness(100%) contrast(90%);
+    transition: filter 0.25s ease 0s;
+}
+
+.button-back:hover{
+    filter: brightness(0) saturate(100%) invert(4%) sepia(0%) saturate(2851%) hue-rotate(228deg) brightness(100%) contrast(96%);
+    transition: filter 0.25s ease 0s;
+}
+
+
+.lista-nav  li:last-child {
+    background-color: #0D0E0E;
+    width: 10.5em;
+    height: 10.5em;
+    border-radius: 100%;
+    margin-right: 4em;
+}
+
+.nav-title {
+    width: 10em;
+    font-size: 3.6em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.container-title{
+    height: auto;
+}
+
+.title{
+    text-align: center;
+    font-size: 6.4em;
+}
+
+.psup, .psub, .listapsup, .listapsub{
+    font-size: 1.4em;
+    width: 127.1em;
+}
+
+.container-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
